@@ -164,7 +164,7 @@ The frontend is optimized for deployment on:
 
 ## 📄 License
 
-This project is part of the Unisynk platform.
+This project is part of the Mergex platform.
 
 ---
 
