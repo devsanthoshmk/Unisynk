@@ -3,9 +3,13 @@ import type { Config } from "tailwindcss";
 const config: Config = {
   darkMode: ["class"],
   content: [
+    // Project uses a `src/` directory (see `src/app`, `src/components`).
+    // Ensure Tailwind scans all files under `src` so utility classes are detected.
+    "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    // Keep these for apps that use top-level `pages` or `app` directories.
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     container: {
